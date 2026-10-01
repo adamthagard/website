@@ -141,18 +141,22 @@ function renderProjectDetail() {
     </div>
   ` : "";
   const embeddedVideo = project.video ? renderVideoMedia(project.video) : "";
-  const mediaBlock = `
+  const mediaBlock = inlineGallery || embeddedVideo ? `
     <div class="section-media">
       ${inlineGallery}
       ${embeddedVideo}
     </div>
-  `;
+  ` : "";
   const heroSource = project.heroMedia || (project.hero ? {
     type: "image",
     src: project.hero,
     alt: `${project.title} hero image`
   } : null);
-  const heroMedia = heroSource ? renderImageMedia(heroSource, "hero-media") : "";
+  const heroMedia = heroSource
+    ? heroSource.type === "video"
+      ? `<div class="hero-video">${renderVideoMedia(heroSource.src)}</div>`
+      : renderImageMedia(heroSource, "hero-media")
+    : "";
   const sections = project.sections.map((section, index) => `
     <section class="case-section">
       <div>

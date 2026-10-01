@@ -290,6 +290,11 @@ p {
   font-weight: 750;
 }
 
+.hero-video {
+  width: min(100%, 800px);
+  margin: 0 auto;
+}
+
 .image-media {
   margin: 0;
 }

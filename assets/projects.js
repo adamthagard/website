@@ -91,7 +91,10 @@ const projects = [
     summary: "An experiment bringing to life the cartoon trope of an angel and devil on your shoulder using OpenAI's realtime API.",
     indexCover: "assets/media/shoulder-angels/icon.png",
     hoverCover: "assets/media/shoulder-angels/cover.png",
-    video: "https://www.youtube.com/embed/-DabF-5oAUE",
+    heroMedia: {
+      type: "video",
+      src: "https://www.youtube.com/embed/-DabF-5oAUE"
+    },
     sections: [
       {
         heading: "Why I Made This",
