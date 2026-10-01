@@ -91,7 +91,7 @@ const projects = [
     summary: "An experiment bringing to life the cartoon trope of an angel and devil on your shoulder using OpenAI's realtime API.",
     indexCover: "assets/media/shoulder-angels/icon.png",
     hoverCover: "assets/media/shoulder-angels/cover.png",
-    video: "https://www.youtube.com/embed/TBD",
+    video: "https://www.youtube.com/embed/-DabF-5oAUE",
     sections: [
       {
         heading: "Why I Made This",
@@ -201,7 +201,7 @@ const projects = [
       {
         type: "image",
         src: "../assets/media/daily-basics/goals.png",
-        alt: "Daily Basics history screen",
+        alt: "Daily Basics goals screen",
         style: "iphone"
       }
     ]
